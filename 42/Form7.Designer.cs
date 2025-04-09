@@ -31,23 +31,22 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // listBox1
             // 
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 25;
+            this.listBox1.ItemHeight = 16;
             this.listBox1.Location = new System.Drawing.Point(279, 102);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(217, 154);
+            this.listBox1.Size = new System.Drawing.Size(217, 148);
             this.listBox1.TabIndex = 0;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -65,21 +64,14 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button1.Location = new System.Drawing.Point(279, 262);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.button1.Location = new System.Drawing.Point(279, 256);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(217, 54);
             this.button1.TabIndex = 2;
             this.button1.Text = "Очистка корзины";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(585, 143);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(155, 21);
-            this.comboBox1.TabIndex = 3;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -91,28 +83,6 @@
             this.label2.Size = new System.Drawing.Size(154, 25);
             this.label2.TabIndex = 4;
             this.label2.Text = "Способ оплаты";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.button2.Location = new System.Drawing.Point(585, 231);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(149, 39);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Оплатить";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label3.Location = new System.Drawing.Point(588, 184);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 17);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Сумма товаров: ";
             // 
             // button5
             // 
@@ -126,22 +96,56 @@
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label4.Location = new System.Drawing.Point(582, 182);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(12, 17);
+            this.label4.TabIndex = 8;
+            this.label4.Text = " ";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.button2.Location = new System.Drawing.Point(585, 226);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(170, 43);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Оплатить";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(585, 144);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(155, 21);
+            this.comboBox1.TabIndex = 10;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox1);
+            this.MaximumSize = new System.Drawing.Size(816, 489);
             this.Name = "Form7";
             this.Text = "Form7";
+            this.Load += new System.EventHandler(this.Form7_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -152,10 +156,10 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

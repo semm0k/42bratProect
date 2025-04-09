@@ -37,7 +37,6 @@ namespace _42
         }
         private void button3_Click(object sender, EventArgs e)
         {
-            // Создаем экземпляр Form2
             Form2 form2 = new Form2();
 
             // Показываем Form2
@@ -67,4 +66,3 @@ namespace _42
         }
     }
 }
- 

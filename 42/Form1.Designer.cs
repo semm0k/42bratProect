@@ -80,6 +80,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.MaximumSize = new System.Drawing.Size(816, 489);
             this.Name = "Form1";
             this.Text = "База";
             this.Load += new System.EventHandler(this.Form1_Load);
